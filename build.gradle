@@ -1,16 +1,13 @@
 plugins {
-    id 'java'
+    id 'java-library'
 }
-
-group = 'myrambler.alatalin'
-version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation(
+    testImplementation (
             "com.codeborne:selenide:6.19.1",
             "com.microsoft.playwright:playwright:1.46.0",
             "org.junit.jupiter:junit-jupiter:5.9.3")
